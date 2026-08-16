@@ -1,15 +1,41 @@
-# CCM101-jestibar
+# Laboratory 01 – Welcome to the Cloud
 
-## About Me
+## Mission Overview
 
-Hello! My name is JOHN DARYL ESTIBAR. I am a BSIT student interested in technology and cloud computing.
+This laboratory activity introduced me to a cloud-based Linux environment using KillerCoda.
 
-BSIT 4-A
+## Objectives
 
-## About This Repository
+- Access a cloud-based Linux environment
+- Explore and navigate Linux
+- Gather basic system information
+- Create and organize files and directories
+- Create a GitHub repository
+- Document technical work using Markdown
 
-This repository contains my Cloud Computing laboratory activities, documentation, screenshots, and reflections completed throughout the semester.
+## Activities Performed
 
-## Course
+I accessed the KillerCoda Linux Playground, created a Linux user, checked system information, created folders and Markdown files, and created my Cloud Computing GitHub portfolio.
 
-CCM101 – Cloud Computing
+## Linux Commands Used
+
+- adduser
+- usermod
+- sudo
+- su
+- whoami
+- pwd
+- hostname
+- cat
+- uname
+- lscpu
+- free
+- df
+- nano
+- mkdir
+- ls
+- cd
+
+## Skills Learned
+
+I learned how to use a cloud-based Linux environment, execute basic Linux commands, create and organize files and folders, and document my technical work using Markdown and GitHub.
