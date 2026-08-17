@@ -27,7 +27,3 @@ Commands used to collect system information from the KillerCoda Linux playground
 ### If this Linux server were migrated to the cloud, which AWS, Azure, and GCP services could host it?
 
 Given the actual specs collected above, one vCPU with roughly 2 GiB of RAM and a 20 GB disk, this server is small enough to fit the entry-level virtual machine tier on any of the three providers. On **AWS**, the closest match is an **Amazon EC2 t2.small** instance (1 vCPU, 2 GiB RAM), paired with a 20 GB **Amazon EBS gp3** volume for the disk. On **Azure**, the equivalent would be an **Azure Virtual Machine** using the **B1ms** burstable size (1 vCPU, 2 GiB RAM), backed by a 20 GB Standard SSD managed disk. On **GCP**, the same specs map to a **Compute Engine** instance using a custom machine type (**e2-custom-1-2048**: 1 vCPU, 2048 MB RAM), with a 20 GB persistent disk attached. All three options fall into each provider's "burstable" or "shared-core" family, which is designed for lightweight workloads like this one rather than sustained heavy compute, so migrating this server wouldn't require anything beyond the smallest general-purpose VM tier on any platform.
-
----
-
-*For the full mission overview, checkpoint deliverables, and repository structure, see the Laboratory Activity 3 assignment sheet.*
