@@ -12,7 +12,7 @@
 | Primary Strength | Broadest service catalog and market maturity | Deep integration with Microsoft products and hybrid cloud | Data analytics, AI/ML, and Kubernetes |
 | Ideal Organizations | Startups to large enterprises needing the widest range of services | Enterprises already running on Windows Server, Active Directory, or Microsoft 365 | Data-driven companies, AI/ML teams, and Kubernetes-heavy workloads |
 
-## Reflection Questions
+## After completing the table, answer the following questions in 2–3 sentences each.
 
 **1. Which cloud provider offers the broadest range of services?**
 AWS offers the broadest range of services. As the first major cloud provider and current market leader, it has had the most time to build out its catalog, now covering over 200 services across compute, storage, databases, AI, and IoT.
@@ -24,7 +24,7 @@ Microsoft Azure best integrates with Microsoft technologies. Since Azure comes f
 Google Cloud Platform is strongest in AI and Kubernetes. GCP offers advanced AI tools like Vertex AI and TPUs, and since Google originally created Kubernetes, its managed service (GKE) is considered the most mature Kubernetes offering available.
 
 **4. Which cloud platform would you personally choose and why?**
-I would personally choose AWS because of its wide range of services and the amount of documentation, tutorials, and community support available, which makes it easier to learn as a student and apply to different types of projects. *(Feel free to adjust this answer to reflect your own reasoning.)*
+I would personally choose AWS because of its wide range of services and the amount of documentation, tutorials, and community support available, which makes it easier to learn as a student and apply to different types of projects. 
 
 ## Equivalent Services Reference Table
 
