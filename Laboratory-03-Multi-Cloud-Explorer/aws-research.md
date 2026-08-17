@@ -9,7 +9,8 @@ AWS infrastructure is organized into **Regions** (separate geographic areas) and
 ## Cloud Management Console
 The **AWS Management Console** is a web-based interface that lets users manage all AWS services in one place — creating resources, monitoring usage, setting up billing alerts, and managing security through IAM. It also includes AWS CloudShell, a browser-based command-line tool for interacting with AWS resources directly.
 
-*(Insert screenshot of the AWS Management Console or homepage here)*
+<img width="1366" height="677" alt="{301E4FEB-DEB4-42FB-80C1-DE4C9B5C058B}" src="https://github.com/user-attachments/assets/2d78c192-2e3d-4365-be41-dad511447f31" />
+
 
 ## Four (4) Core Services
 1. **Amazon EC2 (Elastic Compute Cloud)** – Resizable virtual servers for running applications.
