@@ -1,1 +1,11 @@
+# Mission Reflection
 
+Completing this mission gave me a much clearer picture of how the three major cloud providers actually compare in practice, not just on paper. Out of the three, Google Cloud Platform impressed me the most, mainly because of how far ahead it is in AI and machine learning tools like Vertex AI and TPUs. It made sense once I remembered that Google runs some of the biggest AI-driven products in the world, so it's natural that their cloud platform would be built around that strength.
+
+At the same time, exploring AWS and Azure showed me how much overlap actually exists among the three providers. All of them offer basically the same core building blocks: virtual machines, object storage, private networking, and identity management, just under different names and slightly different implementations. This made me realize that learning cloud computing isn't really about memorizing service names for each provider, but understanding the underlying concepts that apply across all of them.
+
+Working through the client scenarios in Checkpoint 4 also helped me understand how business requirements drive platform selection more than personal preference does. A startup with a tight budget has very different needs from a university already invested in the Microsoft ecosystem, or a research company that needs specialized AI hardware. Recommending a cloud platform isn't just about picking whichever one is "best" overall, it's about matching a provider's specific strengths to the actual problem a client is trying to solve.
+
+Acting as a Cloud Solutions Consultant for this mission taught me to think less like a student memorizing facts and more like someone who has to justify a technical decision to a real client. I had to weigh trade-offs, back up my recommendations with actual services, and explain my reasoning clearly instead of just picking a provider at random.
+
+Finally, this mission pushed my GitHub Cloud Computing Portfolio forward in a meaningful way. It's no longer just a collection of notes, it now includes structured research, comparison tables, and real business recommendations that show how I can apply cloud concepts to actual scenarios, which feels a lot closer to the kind of work I'd expect to do in the field.
