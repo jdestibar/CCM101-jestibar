@@ -9,7 +9,8 @@ GCP infrastructure is organized into **Regions** and **Zones**, connected by Goo
 ## Cloud Management Console
 The **Google Cloud Console** is the web-based interface for managing GCP resources, viewing billing, and monitoring performance. It includes Cloud Shell, a free browser-based terminal preloaded with common developer tools, and integrates tightly with Google Workspace.
 
-*(Insert screenshot of the Google Cloud Console or homepage here)*
+<img width="1366" height="688" alt="{C3D3B460-8058-469A-8585-ACE82F94E97C}" src="https://github.com/user-attachments/assets/fac9da0d-2981-4f30-bf8c-42bd2974f345" />
+
 
 ## Four (4) Core Services
 1. **Compute Engine** – Customizable virtual machines for running workloads.
