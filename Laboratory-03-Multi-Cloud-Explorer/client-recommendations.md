@@ -42,7 +42,8 @@ This company needs highly available infrastructure with automatic scaling to ser
 
 ---
 
-## Multi-Cloud Decision Matrix
+## Checkpoint 6 – Multi-Cloud Decision Matrix
+Create a simple decision matrix recommending the best cloud provider for different business needs
 
 | **Business Requirement** | **Recommended Platform** | **Justification** |
 |---|---|---|
