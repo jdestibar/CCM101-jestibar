@@ -9,7 +9,8 @@ Azure's infrastructure is built around **Regions** grouped into **Geographies**,
 ## Cloud Management Console
 The **Azure Portal** is Azure's web-based management console, used to create, configure, and monitor resources. It also offers Azure Cloud Shell for command-line management and Azure Resource Manager (ARM) templates for infrastructure as code.
 
-*(Insert screenshot of the Azure Portal or homepage here)*
+<img width="1358" height="678" alt="{8247C6D2-FF87-4320-A828-DD0CDC6C8714}" src="https://github.com/user-attachments/assets/882ff806-515a-4c48-8b4a-9706ea3f20bb" />
+
 
 ## Four (4) Core Services
 1. **Azure Virtual Machines** – On-demand, scalable virtual servers.
