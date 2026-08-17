@@ -11,46 +11,9 @@ Commands used to collect system information from the KillerCoda Linux playground
 | Memory | `free -h` |
 | Disk Space | `df -h` |
 
-*(Run each command in your KillerCoda terminal, then paste the output below and insert a screenshot of the terminal for each one.)*
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4fcdf517-d2c9-40d7-997e-8cd1cdbfc4b2" />
 
-```
-root@ubuntu:~$ uname -a
-Linux ubuntu 6.8.0-136-generic #136-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul  1 21:53:05 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
-
-root@ubuntu:~$ cat /etc/os-release
-PRETTY_NAME="Ubuntu 24.04.4 LTS"
-NAME="Ubuntu"
-VERSION_ID="24.04"
-VERSION="24.04.4 LTS (Noble Numbat)"
-VERSION_CODENAME=noble
-ID=ubuntu
-ID_LIKE=debian
-
-root@ubuntu:~$ lscpu
-Architecture:                x86_64
-CPU(s):                      1
-Vendor ID:                   GenuineIntel
-Model name:                  Intel Xeon E312xx (Sandy Bridge, IBRS update)
-Thread(s) per core:          1
-Core(s) per socket:          1
-Socket(s):                   1
-Virtualization features:
-  Hypervisor vendor:         KVM
-  Virtualization type:       full
-
-root@ubuntu:~$ free -h
-               total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       417Mi       868Mi       1.1Mi       785Mi       1.5Gi
-Swap:          1.0Gi          0B       1.0Gi
-
-root@ubuntu:~$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vda1        19G  5.4G   13G  30% /
-/dev/vda16      881M  117M  703M  15% /boot
-/dev/vda15      105M  6.2M   99M   6% /boot/efi
-```
-
-*(Insert terminal screenshots here)*
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/241c790f-d7b4-43fa-9c6a-3652df3b7634" />
 
 **Summary of specs:**
 
