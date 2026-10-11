@@ -105,13 +105,9 @@ VirtualBox uses NAT with port forwarding, which works on any network including s
 2. Create the folders ISO, VMs, Repo, Screenshots, and VM-Backups inside a CCM101 folder on the drive.
 3. In VirtualBox open File, Preferences, General and set the Default Machine Folder to the VMs folder on the drive.
 
-> **Note.** Do not use FAT32 because of its 4 GB file limit. Always shut the VM down before unplugging the drive.
-
-
 ### 4.2 Create the virtual machine
 
 Create a new VM with the sizing in section 3 and skip unattended installation. Confirm that the VM path starts with the external drive letter.
-
 
 ### 4.3 Configure NAT port forwarding
 
@@ -147,7 +143,7 @@ From PowerShell on the laptop, connect using your own username. Use this SSH win
 ssh -p 2222 estibargroup@127.0.0.1
 ```
 
-![SSH login to ccm101-server](screenshots/02-ssh-login.png)
+<img width="1366" height="768" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/3214c65f-5fee-4d7d-b980-7434763d190d" />
 
 
 ### 4.6 Add the backup disk
@@ -179,11 +175,10 @@ sudo mount -a
 df -h | grep ssd-backup
 ```
 
-![lsblk and df showing the mounted backup disk](screenshots/03-lsblk-df.png)
+<img width="1366" height="768" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/6908b531-6629-41ea-8fd1-a0c7f43ee37a" />
 
 
 ## 5. Docker Deployment
-
 
 ### 5.1 Install Docker and Compose
 
@@ -209,7 +204,7 @@ docker compose version
 docker run hello-world
 ```
 
-![Docker and Compose versions](screenshots/04-docker-versions.png)
+<img width="1366" height="768" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/6fa6c436-fc0b-459f-9c99-6c0df06a667d" />
 
 
 ### 5.2 Create the project files
@@ -228,15 +223,6 @@ MYSQL_USER=wordpress
 MYSQL_PASSWORD=ChangeMe_User123
 MYSQL_ROOT_PASSWORD=ChangeMe_Root123
 ```
-
-Create a safe copy for GitHub that has no real passwords.
-
-```bash
-sed 's/=.*/=CHANGE_ME/' .env > .env.example
-```
-
-> **Note.** Never commit the real .env file. The repository .gitignore lists it, and only .env.example is pushed.
-
 
 ### 5.3 docker-compose.yml
 
@@ -301,9 +287,10 @@ docker compose ps
 
 The first run downloads the images, which can take several minutes. Then open the site in the laptop browser using localhost and port 8080, choose a language, and fill in the site title, an admin user, a strong password, and an email.
 
-![docker compose ps with both containers running](screenshots/05-compose-ps.png)
+<img width="1366" height="768" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/33b7c712-fb33-4e82-807b-d355fac74620" />
+<img width="1366" height="768" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/c8fd81bf-d2f7-47c9-bc50-bbb54aba9882" />
 
-![WordPress site with a test post](screenshots/06-wordpress-site.png)
+<img width="1366" height="768" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/ac5090fd-4399-487e-a6e0-018940aac6fd" />
 
 
 ## 6. Persistent Storage and Reboot Test
@@ -335,10 +322,12 @@ docker ps
 docker volume ls
 df -h | grep ssd-backup
 ```
+<img width="1366" height="768" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/3da0aa61-b632-4632-be9f-19436bda958b" />
+<img width="1366" height="768" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/7a24d37c-4936-4c3a-ae0b-3d97a15e461a" />
+<img width="1366" height="768" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/6b360571-558e-4031-ba31-2dcbc2268d12" />
+<img width="1366" height="768" alt="Screenshot (48)" src="https://github.com/user-attachments/assets/8f27fd71-37e8-46a3-8606-55ee0510a1b9" />
 
-> **Note.** Never run docker compose down -v. The -v option deletes the volumes and all data in them.
 
-![Containers, volumes, and the test post after reboot](screenshots/07-after-reboot.png)
 
 
 ## 7. Security Hardening
@@ -363,8 +352,7 @@ sudo ufw status verbose
 | Allow 80/tcp | Public access to the WordPress site. |
 | Port 3306 not opened | MySQL is only needed by WordPress inside the Docker network. |
 
-![UFW status verbose](screenshots/08-ufw-status.png)
-
+<img width="1366" height="768" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/da2825dd-1bb6-413c-b4b5-02b542f48bda" />
 
 ### Other security practices
 
@@ -408,8 +396,7 @@ ls -l automation-script.sh
 ls -lh /mnt/ssd-backup/ccm101-backups
 cat ~/backup.log
 ```
-
-![Script run and the backup file](screenshots/09-backup-script.png)
+<img width="1366" height="768" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/dcf2c3f0-9d01-4e52-9a54-a74aee19a646" />
 
 
 ### Schedule it with cron
@@ -434,7 +421,7 @@ Add this line at the bottom, using the real username.
 
 Check it with crontab -l. For a demo, change the schedule to * * * * * so it runs every minute, wait two minutes, check the backup folder, then change it back. The 11 PM job only runs if the VM is switched on at that time.
 
-![crontab -l and the backup files](screenshots/10-crontab.png)
+<img width="1366" height="768" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/0df38ad4-5d59-4bf4-ba8f-f06bae7eff26" />
 
 
 ## 9. Backup Restore Procedure
@@ -487,9 +474,6 @@ docker exec -i ccm101-mysql sh -c 'mysql -u root -p"$MYSQL_ROOT_PASSWORD" wordpr
 1. Run sudo poweroff in the SSH window and wait for the VM window to close.
 2. Check that VirtualBox shows the VM as Powered Off, then close VirtualBox.
 3. Use Safely Remove Hardware in Windows before unplugging the drive.
-
-> **Note.** Avoid the Power off and Save the machine state options in VirtualBox. Both are risky when the VM lives on an external drive.
-
 
 ## 11. Troubleshooting
 
