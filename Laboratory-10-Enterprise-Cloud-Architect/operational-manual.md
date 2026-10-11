@@ -122,7 +122,7 @@ Before the first boot, open Settings, Network, Adapter 1, set it to NAT, then ad
 | ssh | TCP | 2222 | 22 |
 | web | TCP | 8080 | 80 |
 
-![VirtualBox VM path and port forwarding rules](screenshots/01-virtualbox-settings.png)
+<img width="1366" height="768" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/7886da53-8ca2-44bd-b85c-2b1ead1cc3f9" />
 
 
 ### 4.4 Install Ubuntu Server
