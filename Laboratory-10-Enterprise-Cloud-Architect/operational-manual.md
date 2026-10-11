@@ -81,7 +81,7 @@ VirtualBox uses NAT with port forwarding, which works on any network including s
 
 - Oracle VirtualBox and the Ubuntu Server ISO
 - Git for Windows, VS Code, and draw.io
-- A web browser, a GitHub account, and a KillerCoda account for the live defense
+- A web browser, a GitHub account.
 
 
 ### Virtual machine sizing
