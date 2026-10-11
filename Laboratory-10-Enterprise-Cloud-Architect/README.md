@@ -19,8 +19,6 @@ WordPress + MySQL
 
 This project deploys a secure and persistent multi-tier web application. WordPress is the web tier and MySQL is the database tier. Both run as Docker containers, managed with Docker Compose, on an Ubuntu Server virtual machine in VirtualBox. The VM files and a separate backup disk are stored on an external drive.
 
-![Architecture diagram](architecture-diagram.png)
-
 ## Technologies Used
 
 - Windows 11 host with Oracle VirtualBox (Type 2 hypervisor)
@@ -63,19 +61,6 @@ The data survives container removal and VM reboots.
 ```
 0 23 * * * /home/estibargroup/ccm101-final/automation-script.sh >> /home/estibargroup/cron.log 2>&1
 ```
-
-## Quick Start
-
-```bash
-git clone https://github.com/jdestibar/CCM101-jestibar.git
-cd CCM101-jestibar/Laboratory-10-Enterprise-Cloud-Architect
-cp .env.example .env
-nano .env
-docker compose up -d
-docker compose ps
-```
-
-Replace every `CHANGE_ME` in `.env` with a real password. Then open the site in a browser on port 80 of the server, or port 8080 when using the VirtualBox port forwarding.
 
 ## Files
 
