@@ -6,10 +6,10 @@
 | --- | --- |
 | Project | Secure Multi-Tier Web Application |
 | Application Stack | WordPress + MySQL |
-| Prepared by | ACERIT, SUZANNE P. | ESTIBAR, JOHN DARYL T. | JAVONILLO, KYRA NICOLE V. | SALCEDO, KRISTINE C. |
-| Section | [Your section] |
+| Prepared by | ACERIT, SUZANNE P., ESTIBAR, JOHN DARYL T., JAVONILLO, KYRA NICOLE V., SALCEDO, KRISTINE C. |
+| Section | BSIT 4A |
 | Instructor | Jenkielyn C. Torres |
-| Date | October 2026 |
+| Date | October 11, 2026 |
 
 ---
 
