@@ -65,7 +65,7 @@ VirtualBox uses NAT with port forwarding, which works on any network including s
 | localhost port 8080 | VM port 80 | WordPress website |
 | localhost port 2222 | VM port 22 | SSH administration |
 
-![Architecture diagram](screenshots/architecture-diagram.png)
+<img width="752" height="862" alt="architecture-diagram png" src="https://github.com/user-attachments/assets/6f4f9008-d4b2-4800-8dde-c22c63f7b0f9" />
 
 
 ## 3. Required Resources
